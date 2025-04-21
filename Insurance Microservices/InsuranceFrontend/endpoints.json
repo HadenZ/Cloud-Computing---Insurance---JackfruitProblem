@@ -1,0 +1,10 @@
+{
+    "user_service": "http://bore.pub:58841",
+    "quotation_service": "http://bore.pub:9330",
+    "policy_service": "http://bore.pub:3743",
+    "documentation_service": "http://bore.pub:36781",
+    "claims_service": "http://bore.pub:56921",
+    "email_service": "http://bore.pub:12026",
+    "sms_service": "http://bore.pub:34664"
+  }
+  
