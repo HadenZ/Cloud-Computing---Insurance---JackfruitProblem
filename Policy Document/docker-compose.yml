@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  policy_document:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8004:8004"
+    environment:
+      - DATABASE_URL=mysql+pymysql://root:Space7050@host.docker.internal:3306/policy_document_db
+      - POLICY_SERVICE_URL=http://host.docker.internal:8002/api
