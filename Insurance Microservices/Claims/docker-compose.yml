@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  claims_processing:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8003:8003"
+    environment:
+      - DATABASE_URL=mysql+pymysql://root:Space7050@host.docker.internal:3306/claims_db
